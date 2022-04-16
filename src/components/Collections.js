@@ -26,8 +26,8 @@ export default function Collections() {
                 <div className="collections__item relative">
                     <img src={collections[0]?.imgUrl} alt="" />
                     <div className="collections__item__text">
-                        <div>NEW ARRIVALS</div>
-                        <h2>Get The<br />look for less</h2>
+                        <div>{collections[0]?.label}</div>
+                        <h2>{collections[0]?.title}</h2>
                         <a href="" className="btn btn--red" onClick={(e) => handleClick(e, collections[0])}>ADD TO CART</a>
                     </div>
                 </div>
