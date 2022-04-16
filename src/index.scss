@@ -419,12 +419,14 @@ img {
 
 .deals {
   &__row {
-    margin: 0 -10px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 -10px 30px;
   }
 
   &__box {
     border: 1px solid var(--border-color);
-    margin: 0 10px 30px;
+    margin: 0 10px 20px;
     flex-grow: 1;
     padding: 6px;
     align-items: flex-start;
@@ -455,7 +457,7 @@ img {
     padding-top: 4px;
 
     >div {
-      font-size: 95%;
+      font-size: 92%;
 
       img {
         margin-right: 3px;
@@ -465,7 +467,7 @@ img {
   }
 
   h4 {
-    font-size: 19px;
+    font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 8px;
   }
