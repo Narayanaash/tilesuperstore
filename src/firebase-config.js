@@ -5,12 +5,12 @@ import { initializeApp } from 'firebase/app';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyCm8B6nchCdbtYOuG0zysrLbGgsJO8kgSk',
-  authDomain: 'tilesuperstore-f982d.firebaseapp.com',
-  projectId: 'tilesuperstore-f982d',
-  storageBucket: 'tilesuperstore-f982d.appspot.com',
-  messagingSenderId: '15999682597',
-  appId: '1:15999682597:web:b04058302790107cb197cc',
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
 };
 
 // Initialize Firebase
