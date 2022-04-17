@@ -719,6 +719,15 @@ img {
   }
 }
 
+.eye {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  padding: 6px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     position: relative;

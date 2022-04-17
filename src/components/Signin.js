@@ -19,7 +19,13 @@ const SigninSchema = Yup.object().shape({
 
 export default function Signin({ setShowLogin, setShowSignPopUp }) {
   const [formSubmitting, setFormSubmitting] = useState(false);
+  const [eyeToggle, setEyeToggle] = useState(false);
+
   const auth = getAuth();
+
+  const handleToggle = () => {
+    setEyeToggle((prev) => !prev);
+  };
 
   return (
     <>
@@ -78,13 +84,20 @@ export default function Signin({ setShowLogin, setShowSignPopUp }) {
             </div>
             <div className="input-box">
               <input
-                type="password"
+                type={eyeToggle ? 'text' : 'password'}
                 placeholder="Password*"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.password}
                 name="password"
               />
+              <div className="eye" onClick={handleToggle}>
+                {eyeToggle ? (
+                  <img src="images/icons/eye-close.svg" alt="" />
+                ) : (
+                  <img src="images/icons/eye.svg" alt="" />
+                )}
+              </div>
               <div className="input-error">
                 {errors.password && touched.password && errors.password}
               </div>
