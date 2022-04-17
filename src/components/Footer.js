@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -9,25 +9,39 @@ export default function Footer() {
             <div className="footer__title">Company</div>
             <ul className="footer__list">
               <li className="footer__item">
-                <Link to="" className="footer__link">Bathroom Tiles</Link>
+                <Link to="" className="footer__link">
+                  Bathroom Tiles
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Kitchen Tiles</Link>
+                <Link to="" className="footer__link">
+                  Kitchen Tiles
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Floor Tiles</Link>
+                <Link to="" className="footer__link">
+                  Floor Tiles
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Wall Tiles</Link>
+                <Link to="" className="footer__link">
+                  Wall Tiles
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Natural Stone</Link>
+                <Link to="" className="footer__link">
+                  Natural Stone
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Mosaic Tiles</Link>
+                <Link to="" className="footer__link">
+                  Mosaic Tiles
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Fixing &amp; Finishing</Link>
+                <Link to="" className="footer__link">
+                  Fixing &amp; Finishing
+                </Link>
               </li>
             </ul>
           </div>
@@ -35,13 +49,19 @@ export default function Footer() {
             <div className="footer__title">About us</div>
             <ul className="footer__list">
               <li className="footer__item">
-                <Link to="" className="footer__link">The Company</Link>
+                <Link to="" className="footer__link">
+                  The Company
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Terms and conditions</Link>
+                <Link to="" className="footer__link">
+                  Terms and conditions
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Privacy policy</Link>
+                <Link to="" className="footer__link">
+                  Privacy policy
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,16 +69,24 @@ export default function Footer() {
             <div className="footer__title">Customer Care</div>
             <ul className="footer__list">
               <li className="footer__item">
-                <Link to="" className="footer__link">Contact Us</Link>
+                <Link to="" className="footer__link">
+                  Contact Us
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Delivery &amp; Returns</Link>
+                <Link to="" className="footer__link">
+                  Delivery &amp; Returns
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Refunds</Link>
+                <Link to="" className="footer__link">
+                  Refunds
+                </Link>
               </li>
               <li className="footer__item">
-                <Link to="" className="footer__link">Frequently Asked Questions</Link>
+                <Link to="" className="footer__link">
+                  Frequently Asked Questions
+                </Link>
               </li>
             </ul>
           </div>
@@ -98,16 +126,24 @@ export default function Footer() {
             </ul>
             <div className="newsletter">
               <div className="newsletter__title">Let's stay in touch</div>
-              <p>Subscribe to our newsletter to<br/>get best offers</p>
+              <p>
+                Subscribe to our newsletter to
+                <br />
+                get best offers
+              </p>
               <div className="newsletter__box d-flex justify-between">
-                  <input type="text" placeholder="Email address" />
-                  <button><img src="images/icons/send.svg" alt="" /></button>
+                <input type="text" placeholder="Email address" />
+                <button>
+                  <img src="images/icons/send.svg" alt="" />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer__copyright text-center">© 2022 Tilesuperstore.com. All rights reserved.</div>
+      <div className="footer__copyright text-center">
+        © 2022 Tilesuperstore.com. All rights reserved.
+      </div>
     </footer>
-  )
+  );
 }
