@@ -8,7 +8,10 @@ export default function Sign({ setShowSignPopUp, setUser }) {
   const [showLogin, setShowLogin] = useState(true);
 
   const handleOverlayClick = (e) => {
-    if (e.target == e.currentTarget) {
+    if (
+      e.target == e.currentTarget ||
+      e.target.className == 'sign__close__img'
+    ) {
       setShowSignPopUp(false);
     }
   };
@@ -16,10 +19,7 @@ export default function Sign({ setShowSignPopUp, setUser }) {
   return (
     <div className="sign" onClick={handleOverlayClick}>
       <div className="sign__inner">
-        <SignHeader
-          heading={`${showLogin ? 'Login' : 'Register'}`}
-          setShowSignPopUp={setShowSignPopUp}
-        />
+        <SignHeader heading={`${showLogin ? 'Login' : 'Register'}`} />
         {showLogin ? (
           <Signin
             setShowLogin={setShowLogin}
