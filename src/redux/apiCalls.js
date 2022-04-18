@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { addHeroSlides } from "./slices/heroSlice";
-import { addOffersHeadlines } from "./slices/offersHeadlineSlice";
-import { addDeals } from "./slices/dealSlice";
-import { addCollections } from "./slices/collectionSlice";
-import { addBanners } from "./slices/bannerSlice";
+import { addHeroSlides } from './slices/heroSlice';
+import { addOffersHeadlines } from './slices/offersHeadlineSlice';
+import { addDeals } from './slices/dealSlice';
+import { addCollections } from './slices/collectionSlice';
+import { addBanners } from './slices/bannerSlice';
 
 const baseurl = process.env.REACT_APP_API_URL;
 

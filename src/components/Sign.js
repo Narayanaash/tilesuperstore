@@ -7,8 +7,14 @@ import Signup from './Signup';
 export default function Sign({ setShowSignPopUp, setUser }) {
   const [showLogin, setShowLogin] = useState(true);
 
+  const handleOverlayClick = (e) => {
+    if (e.target == e.currentTarget) {
+      setShowSignPopUp(false);
+    }
+  };
+
   return (
-    <div className="sign">
+    <div className="sign" onClick={handleOverlayClick}>
       <div className="sign__inner">
         <SignHeader
           heading={`${showLogin ? 'Login' : 'Register'}`}
